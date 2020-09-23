@@ -53,10 +53,10 @@
 //
 // Limit Switches
 //
-#define X_MAX_PIN                           PG10
-#define Y_MAX_PIN                           PA12
-#define Z_MAX_PIN                           PA14
-#define Z_MIN_PIN                           PA13
+#define X_MIN_PIN                           PG10
+#define Y_MIN_PIN                           PA12
+//#define Z_MAX_PIN                           PA14
+#define Z_MIN_PIN                           PA15
 
 //
 // Steppers
@@ -107,7 +107,7 @@
 #define BEEPER_PIN                          PB0
 #define LED_PIN                             PD3
 //#define POWER_LOSS_PIN                    PG2   // PG4 PW_DET
-#define FIL_RUNOUT_PIN                      PA15  // MT_DET
+//#define PROBE_PIN                           PA15  // MT_DET
 
 /**
  * Note: MKS Robin TFT screens use various TFT controllers
@@ -121,6 +121,7 @@
  * because Marlin uses the reset as a failsafe to revive a glitchy LCD.
  */
 #define LCD_RESET_PIN                       PF11
+#define NO_LCD_REINIT
 #define LCD_BACKLIGHT_PIN                   PD13
 #define FSMC_CS_PIN                         PD7   // NE4
 #define FSMC_RS_PIN                         PD11  // A0

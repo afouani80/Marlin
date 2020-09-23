@@ -1531,7 +1531,13 @@
 // FSMC / SPI Graphical TFT
 //
 #if TFT_SCALED_DOGLCD
-  //#define GRAPHICAL_TFT_ROTATE_180
+  #define GRAPHICAL_TFT_ROTATE_180
+  #define GRAPHICAL_TFT_UPSCALE 3
+    #define TFT_MARLINUI_COLOR COLOR_WHITE // Main foreground color
+  #define TFT_MARLINBG_COLOR COLOR_BLACK // Background color
+  #define TFT_BTCANCEL_COLOR COLOR_RED   // Cancel button
+  #define TFT_BTARROWS_COLOR COLOR_WHITE // Arrows up/down
+  #define TFT_BTOKMENU_COLOR COLOR_NAVY  // Enter button
   //#define TFT_MARLINUI_COLOR 0xFFFF // White
   //#define TFT_MARLINBG_COLOR 0x0000 // Black
   //#define TFT_DISABLED_COLOR 0x0003 // Almost black
