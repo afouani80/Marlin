@@ -121,7 +121,7 @@
  * because Marlin uses the reset as a failsafe to revive a glitchy LCD.
  */
 #define LCD_RESET_PIN                       PF11
-#define NO_LCD_REINIT
+#define NO_LCD_REINIT                       1
 #define LCD_BACKLIGHT_PIN                   PD13
 #define FSMC_CS_PIN                         PD7   // NE4
 #define FSMC_RS_PIN                         PD11  // A0
