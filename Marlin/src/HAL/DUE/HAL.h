@@ -22,9 +22,7 @@
 #pragma once
 
 /**
- * Description: HAL for Arduino Due and compatible (SAM3X8E)
- *
- * For ARDUINO_ARCH_SAM
+ * HAL for Arduino Due and compatible (SAM3X8E)
  */
 
 #define CPU_32_BIT
@@ -106,6 +104,8 @@ void sei();                     // Enable interrupts
 
 void HAL_clear_reset_source();  // clear reset reason
 uint8_t HAL_get_reset_source(); // get reset reason
+
+inline void HAL_reboot() {}  // reboot the board or restart the bootloader
 
 //
 // ADC
