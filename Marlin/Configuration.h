@@ -1461,9 +1461,9 @@
   #if ENABLED(SKEW_CORRECTION_FOR_Z)
     #define XZ_DIAG_AC 282.22
     #define XZ_DIAG_BD 282.88
-    #define YZ_DIAG_AC 282.8427124746
-    #define YZ_DIAG_BD 282.8427124746
-    #define YZ_SIDE_AD 200
+    #define YZ_DIAG_AC 282.24
+    #define YZ_DIAG_BD 282.26
+    #define YZ_SIDE_AD 199.7
     //#define XZ_SKEW_FACTOR 0.0
     //#define YZ_SKEW_FACTOR 0.0
   #endif
