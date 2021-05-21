@@ -37,6 +37,11 @@
 #define TG_FAN1_PIN                            7  // Anycubic Kossel: Unused
 #define TG_FAN2_PIN                           44  // Anycubic Kossel: Hotend fan
 
+
+  #define FIL_RUNOUT_PIN    2
+  #define FIL_RUNOUT2_PIN   15
+
+
 //
 // Servos
 //
