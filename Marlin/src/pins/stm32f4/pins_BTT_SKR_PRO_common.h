@@ -448,6 +448,9 @@
 
       #if ENABLED(REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER)
         #define BTN_ENC_EN           LCD_PINS_D7  // Detect the presence of the encoder
+            #undef BOARD_ST7920_DELAY_1
+            //#undef BOARD_ST7920_DELAY_2
+            //#undef BOARD_ST7920_DELAY_3
       #endif
 
     #endif
