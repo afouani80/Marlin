@@ -286,7 +286,8 @@
 //
 #define TEMP_0_PIN                          PC1   // T1 <-> E0
 #define TEMP_1_PIN                          PC2   // T2 <-> E1
-#define TEMP_2_PIN                          PC3   // T3 <-> E2
+//#define TEMP_2_PIN                          PC3   // T3 <-> E2
+#define TEMP_CHAMBER_PIN                    PC3   // Chamber
 
 #if ENABLED(M5_EXTENDER)
   #define TEMP_3_PIN                        PA3   // M5 TEMP1
@@ -317,7 +318,8 @@
 //
 #define HEATER_0_PIN                        PB1   // Heater0
 #define HEATER_1_PIN                        PA1   // Heater1
-#define HEATER_2_PIN                        PB0   // Heater2
+//#define HEATER_2_PIN                        PB0   // Heater2
+#define HEATER_CHAMBER_PIN                  PB0   // Chamber
 
 #if ENABLED(M5_EXTENDER)
   #define HEATER_3_PIN                      PD15  // M5 HEAT1
