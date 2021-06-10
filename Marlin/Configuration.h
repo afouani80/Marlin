@@ -1302,11 +1302,11 @@
                                           // This is automatically enabled for MIXING_EXTRUDERs.
 
   // Override individually if the runout sensors vary
-  #define FIL_RUNOUT1_STATE LOW
+  //#define FIL_RUNOUT1_STATE LOW
   //#define FIL_RUNOUT1_PULLUP
   //#define FIL_RUNOUT1_PULLDOWN
 
-  #define FIL_RUNOUT2_STATE LOW
+  //#define FIL_RUNOUT2_STATE LOW
   //#define FIL_RUNOUT2_PULLUP
   //#define FIL_RUNOUT2_PULLDOWN
 
