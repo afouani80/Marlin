@@ -123,7 +123,7 @@
  * Currently Ethernet (-2) is only supported on Teensy 4.1 boards.
  * :[-2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-//#define SERIAL_PORT_2 -1
+#define SERIAL_PORT_2 1
 //#define BAUDRATE_2 250000   // Enable to override BAUDRATE
 
 /**
@@ -139,7 +139,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_BTT_SKR_PRO_V1_1
+  #define MOTHERBOARD BOARD_FLYF407ZG
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -470,7 +470,7 @@
 #define TEMP_SENSOR_7 0
 #define TEMP_SENSOR_BED 1
 #define TEMP_SENSOR_PROBE 0
-#define TEMP_SENSOR_CHAMBER 1
+#define TEMP_SENSOR_CHAMBER 0
 #define TEMP_SENSOR_COOLER 0
 #define TEMP_SENSOR_REDUNDANT 0
 
