@@ -182,10 +182,10 @@ static uint8_t _card_percent = 0;
 static uint16_t _remain_time = 0;
 
 #if ENABLED(PAUSE_HEAT)
-  #if ENABLED(HAS_HOTEND)
+  #if HAS_HOTEND
     uint16_t resume_hotend_temp = 0;
   #endif
-  #if ENABLED(HAS_HEATED_BED)
+  #if HAS_HEATED_BED
     uint16_t resume_bed_temp = 0;
   #endif
 #endif
@@ -1235,7 +1235,7 @@ inline ENCODER_DiffState get_encoder_state() {
 void HMI_Plan_Move(const feedRate_t fr_mm_s) {
   if (!planner.is_full()) {
     planner.synchronize();
-    planner.buffer_line(current_position, fr_mm_s, active_extruder);
+    planner.buffer_line(current_position, fr_mm_s);
     DWIN_UpdateLCD();
   }
 }
